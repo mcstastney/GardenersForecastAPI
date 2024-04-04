@@ -35,7 +35,7 @@ def get_weather_forecast():
         # use inbuilt .input() function to take input from the user
         city = input("\n\033[1mWhat city do you want the weather forecast for?\033[0m ")
         country_code = input("\033[1mWhat's the country code? e.g. GB\033[0m (look up country code https://www.iso.org/obp/ui/#search) ")
-        api_key = "1c466679f1582cc43d30b15577ddbea9" # NOTE TO MARKERS: add API key here before running the file
+        api_key = "" # NOTE TO DEVELOPERS: add API key here before running the file
         # use inbuilt .format() function to insert the variables in to the api url
         url_weather = "https://api.openweathermap.org/data/2.5/weather?q={},{}&appid={}&units=metric".format(city, country_code, api_key)
         response = requests.get(url_weather) # Get data from the API via HTTP method
